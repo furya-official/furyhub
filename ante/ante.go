@@ -7,8 +7,8 @@ import (
 
 	guardiankeeper "github.com/furya-official/furyhub/modules/guardian/keeper"
 
-	oraclekeeper "github.com/furyaofficial/furymod/modules/oracle/keeper"
-	tokenkeeper "github.com/furyaofficial/furymod/modules/token/keeper"
+	oraclekeeper "github.com/furya-official/furymod/modules/oracle/keeper"
+	tokenkeeper "github.com/furya-official/furymod/modules/token/keeper"
 )
 
 // HandlerOptions extend the SDK's AnteHandler options by requiring the IBC

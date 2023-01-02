@@ -8,10 +8,10 @@ import (
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	ibctransfertypes "github.com/cosmos/ibc-go/v5/modules/apps/transfer/types"
 
-	coinswaptypes "github.com/furyaofficial/furymod/modules/coinswap/types"
-	servicetypes "github.com/furyaofficial/furymod/modules/service/types"
-	tokenkeeper "github.com/furyaofficial/furymod/modules/token/keeper"
-	tokentypes "github.com/furyaofficial/furymod/modules/token/types"
+	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
+	tokenkeeper "github.com/furya-official/furymod/modules/token/keeper"
+	tokentypes "github.com/furya-official/furymod/modules/token/types"
 )
 
 // ValidateTokenDecorator is responsible for restricting the token participation of the swap prefix
