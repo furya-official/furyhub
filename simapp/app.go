@@ -97,7 +97,7 @@ import (
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
 	nftkeeper "github.com/furya-official/furymod/modules/nft/keeper"
 	nftmodule "github.com/furya-official/furymod/modules/nft/module"
-	nfttypes "github.com/furya-official/furymod/modules/nft/types"
+	nfttypes "github.com/irisnet/irismod/modules/nft/types"
 	"github.com/furya-official/furymod/modules/oracle"
 	oraclekeeper "github.com/furya-official/furymod/modules/oracle/keeper"
 	oracletypes "github.com/furya-official/furymod/modules/oracle/types"

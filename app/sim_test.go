@@ -12,7 +12,7 @@ import (
 	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
 	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	nfttypes "github.com/furya-official/furymod/modules/nft/types"
+	nfttypes "github.com/irisnet/irismod/modules/nft/types"
 	oracletypes "github.com/furya-official/furymod/modules/oracle/types"
 	randomtypes "github.com/furya-official/furymod/modules/random/types"
 	servicetypes "github.com/furya-official/furymod/modules/service/types"
