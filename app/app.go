@@ -104,7 +104,7 @@ import (
 	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
 	"github.com/furya-official/furymod/modules/mt"
 	mtkeeper "github.com/furya-official/furymod/modules/mt/keeper"
-	mttypes "github.com/furya-official/furymod/modules/mt/types"
+	mttypes "github.com/irisnet/irismod/modules/mt/types"
 	nftkeeper "github.com/furya-official/furymod/modules/nft/keeper"
 	nftmodule "github.com/furya-official/furymod/modules/nft/module"
 	nfttypes "github.com/furya-official/furymod/modules/nft/types"

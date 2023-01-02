@@ -37,7 +37,7 @@ import (
 	farmtypes "github.com/furya-official/furymod/modules/farm/types"
 	"github.com/furya-official/furymod/modules/htlc"
 	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
-	mttypes "github.com/furya-official/furymod/modules/mt/types"
+	mttypes "github.com/irisnet/irismod/modules/mt/types"
 	nftmodule "github.com/furya-official/furymod/modules/nft/module"
 	nfttypes "github.com/furya-official/furymod/modules/nft/types"
 	"github.com/furya-official/furymod/modules/oracle"
