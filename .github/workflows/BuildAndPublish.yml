@@ -17,7 +17,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=irisnet/irishub
+          DOCKER_IMAGE=furya-official/furyhub
           VERSION=noop
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -54,8 +54,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           
 #       - name: Build irishub image
-#         run: source ~/.bashrc; sudo docker build -t irisnet/irishub:latest .
+#         run: source ~/.bashrc; sudo docker build -t furya-official/furyhub:latest .
 #       - name: Login dockerhub
 #         run: sudo docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASS}}
 #       - name: Publish irishub image
-#         run: sudo docker push irisnet/irishub:latest
+#         run: sudo docker push furya-official/furyhub:latest
