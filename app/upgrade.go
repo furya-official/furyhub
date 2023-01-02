@@ -38,7 +38,7 @@ import (
 	"github.com/furya-official/furymod/modules/htlc"
 	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	nftmodule "github.com/furya-official/furymod/modules/nft/module"
+	nftmodule "github.com/irisnet/irismod/modules/nft/module"
 	nfttypes "github.com/irisnet/irismod/modules/nft/types"
 	"github.com/furya-official/furymod/modules/oracle"
 	oracletypes "github.com/furya-official/furymod/modules/oracle/types"
