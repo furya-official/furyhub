@@ -53,9 +53,9 @@ jobs:
           tags: ${{ steps.prep.outputs.tags }}
           platforms: linux/amd64,linux/arm64
           
-#       - name: Build irishub image
+#       - name: Build furyhub image
 #         run: source ~/.bashrc; sudo docker build -t furya-official/furyhub:latest .
 #       - name: Login dockerhub
 #         run: sudo docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASS}}
-#       - name: Publish irishub image
+#       - name: Publish furyhub image
 #         run: sudo docker push furya-official/furyhub:latest
