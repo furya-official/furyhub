@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irishub/modules/guardian/keeper"
-	"github.com/irisnet/irishub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/guardian/keeper"
+	"github.com/furya-official/furyhub/modules/guardian/types"
 )
 
 // InitGenesis stores genesis data

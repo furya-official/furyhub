@@ -33,40 +33,40 @@ import (
 	icatypes "github.com/cosmos/ibc-go/v5/modules/apps/27-interchain-accounts/types"
 	ibchost "github.com/cosmos/ibc-go/v5/modules/core/24-host"
 
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
-	farmtypes "github.com/irisnet/irismod/modules/farm/types"
-	"github.com/irisnet/irismod/modules/htlc"
-	htlctypes "github.com/irisnet/irismod/modules/htlc/types"
-	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	nftmodule "github.com/irisnet/irismod/modules/nft/module"
-	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/modules/oracle"
-	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
-	"github.com/irisnet/irismod/modules/random"
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
-	"github.com/irisnet/irismod/modules/record"
-	recordtypes "github.com/irisnet/irismod/modules/record/types"
-	"github.com/irisnet/irismod/modules/service"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
-	"github.com/irisnet/irismod/modules/token"
-	tokentypes "github.com/irisnet/irismod/modules/token/types"
+	coinswaptypes "github.com/furyaofficial/furymod/modules/coinswap/types"
+	farmtypes "github.com/furyaofficial/furymod/modules/farm/types"
+	"github.com/furyaofficial/furymod/modules/htlc"
+	htlctypes "github.com/furyaofficial/furymod/modules/htlc/types"
+	mttypes "github.com/furyaofficial/furymod/modules/mt/types"
+	nftmodule "github.com/furyaofficial/furymod/modules/nft/module"
+	nfttypes "github.com/furyaofficial/furymod/modules/nft/types"
+	"github.com/furyaofficial/furymod/modules/oracle"
+	oracletypes "github.com/furyaofficial/furymod/modules/oracle/types"
+	"github.com/furyaofficial/furymod/modules/random"
+	randomtypes "github.com/furyaofficial/furymod/modules/random/types"
+	"github.com/furyaofficial/furymod/modules/record"
+	recordtypes "github.com/furyaofficial/furymod/modules/record/types"
+	"github.com/furyaofficial/furymod/modules/service"
+	servicetypes "github.com/furyaofficial/furymod/modules/service/types"
+	"github.com/furyaofficial/furymod/modules/token"
+	tokentypes "github.com/furyaofficial/furymod/modules/token/types"
 
 	tibcmttypes "github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer/types"
 	tibcnfttypes "github.com/bianjieai/tibc-go/modules/tibc/apps/nft_transfer/types"
 	tibcclienttypes "github.com/bianjieai/tibc-go/modules/tibc/core/02-client/types"
 	tibchost "github.com/bianjieai/tibc-go/modules/tibc/core/24-host"
 
-	migratehtlc "github.com/irisnet/irishub/migrate/htlc"
-	migrateservice "github.com/irisnet/irishub/migrate/service"
-	migratetibc "github.com/irisnet/irishub/migrate/tibc"
-	"github.com/irisnet/irishub/modules/guardian"
-	guardiantypes "github.com/irisnet/irishub/modules/guardian/types"
-	"github.com/irisnet/irishub/modules/mint"
-	minttypes "github.com/irisnet/irishub/modules/mint/types"
+	migratehtlc "github.com/furya-official/furyhub/migrate/htlc"
+	migrateservice "github.com/furya-official/furyhub/migrate/service"
+	migratetibc "github.com/furya-official/furyhub/migrate/tibc"
+	"github.com/furya-official/furyhub/modules/guardian"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 )
 
 // RegisterUpgradePlan register a handler of upgrade plan
-func (app *IrisApp) RegisterUpgradePlan(cfg module.Configurator) {
+func (app *FuryApp) RegisterUpgradePlan(cfg module.Configurator) {
 	app.RegisterUpgradeHandler(
 		"v1.1", &store.StoreUpgrades{},
 		func(ctx sdk.Context, plan sdkupgrade.Plan, fromVM module.VersionMap) (module.VersionMap, error) {
@@ -96,7 +96,7 @@ func (app *IrisApp) RegisterUpgradePlan(cfg module.Configurator) {
 				}},
 			)
 			tibcclienttypes.SetDefaultGenesisState(tibcclienttypes.GenesisState{
-				NativeChainName: "irishub-mainnet",
+				NativeChainName: "furyhub-mainnet",
 			})
 
 			if err := migratetibc.CreateClient(ctx,

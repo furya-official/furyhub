@@ -83,49 +83,49 @@ import (
 	porttypes "github.com/cosmos/ibc-go/v5/modules/core/05-port/types"
 	ibchost "github.com/cosmos/ibc-go/v5/modules/core/24-host"
 	ibckeeper "github.com/cosmos/ibc-go/v5/modules/core/keeper"
-	"github.com/irisnet/irismod/modules/token"
+	"github.com/furyaofficial/furymod/modules/token"
 
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/irisnet/irismod/modules/coinswap"
-	coinswapkeeper "github.com/irisnet/irismod/modules/coinswap/keeper"
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
-	"github.com/irisnet/irismod/modules/htlc"
-	htlckeeper "github.com/irisnet/irismod/modules/htlc/keeper"
-	htlctypes "github.com/irisnet/irismod/modules/htlc/types"
-	"github.com/irisnet/irismod/modules/mt"
-	mtkeeper "github.com/irisnet/irismod/modules/mt/keeper"
-	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	nftkeeper "github.com/irisnet/irismod/modules/nft/keeper"
-	nftmodule "github.com/irisnet/irismod/modules/nft/module"
-	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/modules/oracle"
-	oraclekeeper "github.com/irisnet/irismod/modules/oracle/keeper"
-	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
-	"github.com/irisnet/irismod/modules/random"
-	randomkeeper "github.com/irisnet/irismod/modules/random/keeper"
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
-	"github.com/irisnet/irismod/modules/record"
-	recordkeeper "github.com/irisnet/irismod/modules/record/keeper"
-	recordtypes "github.com/irisnet/irismod/modules/record/types"
-	"github.com/irisnet/irismod/modules/service"
-	servicekeeper "github.com/irisnet/irismod/modules/service/keeper"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	"github.com/furyaofficial/furymod/modules/coinswap"
+	coinswapkeeper "github.com/furyaofficial/furymod/modules/coinswap/keeper"
+	coinswaptypes "github.com/furyaofficial/furymod/modules/coinswap/types"
+	"github.com/furyaofficial/furymod/modules/htlc"
+	htlckeeper "github.com/furyaofficial/furymod/modules/htlc/keeper"
+	htlctypes "github.com/furyaofficial/furymod/modules/htlc/types"
+	"github.com/furyaofficial/furymod/modules/mt"
+	mtkeeper "github.com/furyaofficial/furymod/modules/mt/keeper"
+	mttypes "github.com/furyaofficial/furymod/modules/mt/types"
+	nftkeeper "github.com/furyaofficial/furymod/modules/nft/keeper"
+	nftmodule "github.com/furyaofficial/furymod/modules/nft/module"
+	nfttypes "github.com/furyaofficial/furymod/modules/nft/types"
+	"github.com/furyaofficial/furymod/modules/oracle"
+	oraclekeeper "github.com/furyaofficial/furymod/modules/oracle/keeper"
+	oracletypes "github.com/furyaofficial/furymod/modules/oracle/types"
+	"github.com/furyaofficial/furymod/modules/random"
+	randomkeeper "github.com/furyaofficial/furymod/modules/random/keeper"
+	randomtypes "github.com/furyaofficial/furymod/modules/random/types"
+	"github.com/furyaofficial/furymod/modules/record"
+	recordkeeper "github.com/furyaofficial/furymod/modules/record/keeper"
+	recordtypes "github.com/furyaofficial/furymod/modules/record/types"
+	"github.com/furyaofficial/furymod/modules/service"
+	servicekeeper "github.com/furyaofficial/furymod/modules/service/keeper"
+	servicetypes "github.com/furyaofficial/furymod/modules/service/types"
 
-	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
-	tokentypes "github.com/irisnet/irismod/modules/token/types"
+	tokenkeeper "github.com/furyaofficial/furymod/modules/token/keeper"
+	tokentypes "github.com/furyaofficial/furymod/modules/token/types"
 
-	"github.com/irisnet/irishub/address"
-	"github.com/irisnet/irishub/lite"
-	"github.com/irisnet/irishub/modules/guardian"
-	guardiankeeper "github.com/irisnet/irishub/modules/guardian/keeper"
-	guardiantypes "github.com/irisnet/irishub/modules/guardian/types"
-	"github.com/irisnet/irishub/modules/mint"
-	mintkeeper "github.com/irisnet/irishub/modules/mint/keeper"
-	minttypes "github.com/irisnet/irishub/modules/mint/types"
+	"github.com/furya-official/furyhub/address"
+	"github.com/furya-official/furyhub/lite"
+	"github.com/furya-official/furyhub/modules/guardian"
+	guardiankeeper "github.com/furya-official/furyhub/modules/guardian/keeper"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	mintkeeper "github.com/furya-official/furyhub/modules/mint/keeper"
+	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 
-	"github.com/irisnet/irismod/modules/farm"
-	farmkeeper "github.com/irisnet/irismod/modules/farm/keeper"
-	farmtypes "github.com/irisnet/irismod/modules/farm/types"
+	"github.com/furyaofficial/furymod/modules/farm"
+	farmkeeper "github.com/furyaofficial/furymod/modules/farm/keeper"
+	farmtypes "github.com/furyaofficial/furymod/modules/farm/types"
 
 	tibcmttransfer "github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer"
 	tibcmttransferkeeper "github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer/keeper"
@@ -305,10 +305,10 @@ func init() {
 	sdk.SetCoinDenomRegex(DefaultCoinDenomRegex)
 
 	nativeToken = tokentypes.Token{
-		Symbol:        "iris",
-		Name:          "Irishub staking token",
+		Symbol:        "fury",
+		Name:          "Furyhub staking token",
 		Scale:         6,
-		MinUnit:       "uiris",
+		MinUnit:       "ufury",
 		InitialSupply: 2000000000,
 		MaxSupply:     10000000000,
 		Mintable:      true,
@@ -320,7 +320,7 @@ func init() {
 		panic(err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".iris")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".fury")
 	owner, err := sdk.AccAddressFromBech32(nativeToken.Owner)
 	if err != nil {
 		panic(err)
@@ -343,7 +343,7 @@ func DefaultCoinDenomRegex() string {
 	return reDnmString
 }
 
-// NewSimApp returns a reference to an initialized IrisApp.
+// NewSimApp returns a reference to an initialized FuryApp.
 func NewSimApp(
 	logger log.Logger,
 	db dbm.DB,
@@ -908,8 +908,8 @@ func NewSimApp(
 }
 
 // MakeCodecs constructs the *std.Codec and *codec.LegacyAmino instances used by
-// irisapp. It is useful for tests and clients who do not want to construct the
-// full irisapp
+// furyapp. It is useful for tests and clients who do not want to construct the
+// full furyapp
 func MakeCodecs() (codec.Codec, *codec.LegacyAmino) {
 	config := MakeTestEncodingConfig()
 	return config.Codec, config.Amino
@@ -983,7 +983,7 @@ func (app *SimApp) LegacyAmino() *codec.LegacyAmino {
 	return app.legacyAmino
 }
 
-// AppCodec returns IrisApp's app codec.
+// AppCodec returns FuryApp's app codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
@@ -991,7 +991,7 @@ func (app *SimApp) AppCodec() codec.Codec {
 	return app.appCodec
 }
 
-// InterfaceRegistry returns IrisApp's InterfaceRegistry
+// InterfaceRegistry returns FuryApp's InterfaceRegistry
 func (app *SimApp) InterfaceRegistry() types.InterfaceRegistry {
 	return app.interfaceRegistry
 }

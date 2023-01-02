@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 
-	"github.com/irisnet/irishub/modules/mint/types"
+	"github.com/furya-official/furyhub/modules/mint/types"
 )
 
 // GetQueryCmd returns the cli query commands for the mint module.

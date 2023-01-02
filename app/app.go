@@ -96,48 +96,48 @@ import (
 	ibchost "github.com/cosmos/ibc-go/v5/modules/core/24-host"
 	ibckeeper "github.com/cosmos/ibc-go/v5/modules/core/keeper"
 
-	"github.com/irisnet/irismod/modules/coinswap"
-	coinswapkeeper "github.com/irisnet/irismod/modules/coinswap/keeper"
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
-	"github.com/irisnet/irismod/modules/htlc"
-	htlckeeper "github.com/irisnet/irismod/modules/htlc/keeper"
-	htlctypes "github.com/irisnet/irismod/modules/htlc/types"
-	"github.com/irisnet/irismod/modules/mt"
-	mtkeeper "github.com/irisnet/irismod/modules/mt/keeper"
-	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	nftkeeper "github.com/irisnet/irismod/modules/nft/keeper"
-	nftmodule "github.com/irisnet/irismod/modules/nft/module"
-	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/modules/oracle"
-	oraclekeeper "github.com/irisnet/irismod/modules/oracle/keeper"
-	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
-	"github.com/irisnet/irismod/modules/random"
-	randomkeeper "github.com/irisnet/irismod/modules/random/keeper"
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
-	"github.com/irisnet/irismod/modules/record"
-	recordkeeper "github.com/irisnet/irismod/modules/record/keeper"
-	recordtypes "github.com/irisnet/irismod/modules/record/types"
-	"github.com/irisnet/irismod/modules/service"
-	servicekeeper "github.com/irisnet/irismod/modules/service/keeper"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
-	"github.com/irisnet/irismod/modules/token"
-	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
-	tokentypes "github.com/irisnet/irismod/modules/token/types"
+	"github.com/furyaofficial/furymod/modules/coinswap"
+	coinswapkeeper "github.com/furyaofficial/furymod/modules/coinswap/keeper"
+	coinswaptypes "github.com/furyaofficial/furymod/modules/coinswap/types"
+	"github.com/furyaofficial/furymod/modules/htlc"
+	htlckeeper "github.com/furyaofficial/furymod/modules/htlc/keeper"
+	htlctypes "github.com/furyaofficial/furymod/modules/htlc/types"
+	"github.com/furyaofficial/furymod/modules/mt"
+	mtkeeper "github.com/furyaofficial/furymod/modules/mt/keeper"
+	mttypes "github.com/furyaofficial/furymod/modules/mt/types"
+	nftkeeper "github.com/furyaofficial/furymod/modules/nft/keeper"
+	nftmodule "github.com/furyaofficial/furymod/modules/nft/module"
+	nfttypes "github.com/furyaofficial/furymod/modules/nft/types"
+	"github.com/furyaofficial/furymod/modules/oracle"
+	oraclekeeper "github.com/furyaofficial/furymod/modules/oracle/keeper"
+	oracletypes "github.com/furyaofficial/furymod/modules/oracle/types"
+	"github.com/furyaofficial/furymod/modules/random"
+	randomkeeper "github.com/furyaofficial/furymod/modules/random/keeper"
+	randomtypes "github.com/furyaofficial/furymod/modules/random/types"
+	"github.com/furyaofficial/furymod/modules/record"
+	recordkeeper "github.com/furyaofficial/furymod/modules/record/keeper"
+	recordtypes "github.com/furyaofficial/furymod/modules/record/types"
+	"github.com/furyaofficial/furymod/modules/service"
+	servicekeeper "github.com/furyaofficial/furymod/modules/service/keeper"
+	servicetypes "github.com/furyaofficial/furymod/modules/service/types"
+	"github.com/furyaofficial/furymod/modules/token"
+	tokenkeeper "github.com/furyaofficial/furymod/modules/token/keeper"
+	tokentypes "github.com/furyaofficial/furymod/modules/token/types"
 
-	"github.com/irisnet/irishub/address"
-	irishubante "github.com/irisnet/irishub/ante"
-	irisappparams "github.com/irisnet/irishub/app/params"
-	"github.com/irisnet/irishub/lite"
-	"github.com/irisnet/irishub/modules/guardian"
-	guardiankeeper "github.com/irisnet/irishub/modules/guardian/keeper"
-	guardiantypes "github.com/irisnet/irishub/modules/guardian/types"
-	"github.com/irisnet/irishub/modules/mint"
-	mintkeeper "github.com/irisnet/irishub/modules/mint/keeper"
-	minttypes "github.com/irisnet/irishub/modules/mint/types"
+	"github.com/furya-official/furyhub/address"
+	furyhubante "github.com/furya-official/furyhub/ante"
+	furyappparams "github.com/furya-official/furyhub/app/params"
+	"github.com/furya-official/furyhub/lite"
+	"github.com/furya-official/furyhub/modules/guardian"
+	guardiankeeper "github.com/furya-official/furyhub/modules/guardian/keeper"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	mintkeeper "github.com/furya-official/furyhub/modules/mint/keeper"
+	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 
-	"github.com/irisnet/irismod/modules/farm"
-	farmkeeper "github.com/irisnet/irismod/modules/farm/keeper"
-	farmtypes "github.com/irisnet/irismod/modules/farm/types"
+	"github.com/furyaofficial/furymod/modules/farm"
+	farmkeeper "github.com/furyaofficial/furymod/modules/farm/keeper"
+	farmtypes "github.com/furyaofficial/furymod/modules/farm/types"
 
 	tibcmttransfer "github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer"
 	tibcmttransferkeeper "github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer/keeper"
@@ -154,7 +154,7 @@ import (
 	tibckeeper "github.com/bianjieai/tibc-go/modules/tibc/core/keeper"
 )
 
-const appName = "IrisApp"
+const appName = "FuryApp"
 
 var (
 	// DefaultNodeHome default home directories for the application daemon
@@ -245,14 +245,14 @@ var (
 )
 
 var (
-	_ simapp.App              = (*IrisApp)(nil)
-	_ servertypes.Application = (*IrisApp)(nil)
+	_ simapp.App              = (*FuryApp)(nil)
+	_ servertypes.Application = (*FuryApp)(nil)
 )
 
-// IrisApp extends an ABCI application, but with most of its parameters exported.
+// FuryApp extends an ABCI application, but with most of its parameters exported.
 // They are exported for convenience in creating helper functions, as object
 // capabilities aren't needed for testing.
-type IrisApp struct {
+type FuryApp struct {
 	*baseapp.BaseApp
 	legacyAmino       *codec.LegacyAmino
 	appCodec          codec.Codec
@@ -325,10 +325,10 @@ func init() {
 	sdk.SetCoinDenomRegex(DefaultCoinDenomRegex)
 
 	nativeToken = tokentypes.Token{
-		Symbol:        "iris",
-		Name:          "Irishub staking token",
+		Symbol:        "fury",
+		Name:          "Furyhub staking token",
 		Scale:         6,
-		MinUnit:       "uiris",
+		MinUnit:       "ufury",
 		InitialSupply: 2000000000,
 		MaxSupply:     10000000000,
 		Mintable:      true,
@@ -340,7 +340,7 @@ func init() {
 		panic(err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".iris")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".fury")
 	owner, err := sdk.AccAddressFromBech32(nativeToken.Owner)
 	if err != nil {
 		panic(err)
@@ -363,8 +363,8 @@ func DefaultCoinDenomRegex() string {
 	return reDnmString
 }
 
-// NewIrisApp returns a reference to an initialized IrisApp.
-func NewIrisApp(
+// NewFuryApp returns a reference to an initialized FuryApp.
+func NewFuryApp(
 	logger log.Logger,
 	db dbm.DB,
 	traceStore io.Writer,
@@ -372,10 +372,10 @@ func NewIrisApp(
 	skipUpgradeHeights map[int64]bool,
 	homePath string,
 	invCheckPeriod uint,
-	encodingConfig irisappparams.EncodingConfig,
+	encodingConfig furyappparams.EncodingConfig,
 	appOpts servertypes.AppOptions,
 	baseAppOptions ...func(*baseapp.BaseApp),
-) *IrisApp {
+) *FuryApp {
 
 	// TODO: Remove cdc in favor of appCodec once all modules are migrated.
 	appCodec := encodingConfig.Marshaler
@@ -406,7 +406,7 @@ func NewIrisApp(
 		tmos.Exit(err.Error())
 	}
 
-	app := &IrisApp{
+	app := &FuryApp{
 		BaseApp:           bApp,
 		legacyAmino:       legacyAmino,
 		appCodec:          appCodec,
@@ -935,8 +935,8 @@ func NewIrisApp(
 	app.MountTransientStores(tkeys)
 	app.MountMemoryStores(memKeys)
 
-	anteHandler, err := irishubante.NewAnteHandler(
-		irishubante.HandlerOptions{
+	anteHandler, err := furyhubante.NewAnteHandler(
+		furyhubante.HandlerOptions{
 			HandlerOptions: ante.HandlerOptions{
 				AccountKeeper:   app.AccountKeeper,
 				BankKeeper:      app.BankKeeper,
@@ -984,20 +984,20 @@ func NewIrisApp(
 }
 
 // Name returns the name of the App
-func (app *IrisApp) Name() string { return app.BaseApp.Name() }
+func (app *FuryApp) Name() string { return app.BaseApp.Name() }
 
 // BeginBlocker application updates every begin block
-func (app *IrisApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
+func (app *FuryApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
 	return app.mm.BeginBlock(ctx, req)
 }
 
 // EndBlocker application updates every end block
-func (app *IrisApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
+func (app *FuryApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
 	return app.mm.EndBlock(ctx, req)
 }
 
 // InitChainer application update at chain initialization
-func (app *IrisApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
+func (app *FuryApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
 	var genesisState GenesisState
 	if err := tmjson.Unmarshal(req.AppStateBytes, &genesisState); err != nil {
 		panic(err)
@@ -1017,12 +1017,12 @@ func (app *IrisApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 }
 
 // LoadHeight loads a particular height
-func (app *IrisApp) LoadHeight(height int64) error {
+func (app *FuryApp) LoadHeight(height int64) error {
 	return app.LoadVersion(height)
 }
 
 // ModuleAccountAddrs returns all the app's module account addresses.
-func (app *IrisApp) ModuleAccountAddrs() map[string]bool {
+func (app *FuryApp) ModuleAccountAddrs() map[string]bool {
 	modAccAddrs := make(map[string]bool)
 	for acc := range maccPerms {
 		modAccAddrs[authtypes.NewModuleAddress(acc).String()] = true
@@ -1033,7 +1033,7 @@ func (app *IrisApp) ModuleAccountAddrs() map[string]bool {
 
 // BlockedModuleAccountAddrs returns all the app's blocked module account
 // addresses.
-func (app *IrisApp) BlockedModuleAccountAddrs() map[string]bool {
+func (app *FuryApp) BlockedModuleAccountAddrs() map[string]bool {
 	modAccAddrs := app.ModuleAccountAddrs()
 
 	// remove module accounts that are ALLOWED to received funds
@@ -1049,59 +1049,59 @@ func (app *IrisApp) BlockedModuleAccountAddrs() map[string]bool {
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *IrisApp) LegacyAmino() *codec.LegacyAmino {
+func (app *FuryApp) LegacyAmino() *codec.LegacyAmino {
 	return app.legacyAmino
 }
 
-// AppCodec returns IrisApp's app codec.
+// AppCodec returns FuryApp's app codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *IrisApp) AppCodec() codec.Codec {
+func (app *FuryApp) AppCodec() codec.Codec {
 	return app.appCodec
 }
 
-// InterfaceRegistry returns IrisApp's InterfaceRegistry
-func (app *IrisApp) InterfaceRegistry() types.InterfaceRegistry {
+// InterfaceRegistry returns FuryApp's InterfaceRegistry
+func (app *FuryApp) InterfaceRegistry() types.InterfaceRegistry {
 	return app.interfaceRegistry
 }
 
 // GetKey returns the KVStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *IrisApp) GetKey(storeKey string) *storetypes.KVStoreKey {
+func (app *FuryApp) GetKey(storeKey string) *storetypes.KVStoreKey {
 	return app.keys[storeKey]
 }
 
 // GetTKey returns the TransientStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *IrisApp) GetTKey(storeKey string) *storetypes.TransientStoreKey {
+func (app *FuryApp) GetTKey(storeKey string) *storetypes.TransientStoreKey {
 	return app.tkeys[storeKey]
 }
 
 // GetMemKey returns the MemStoreKey for the provided mem key.
 //
 // NOTE: This is solely used for testing purposes.
-func (app *IrisApp) GetMemKey(storeKey string) *storetypes.MemoryStoreKey {
+func (app *FuryApp) GetMemKey(storeKey string) *storetypes.MemoryStoreKey {
 	return app.memKeys[storeKey]
 }
 
 // GetSubspace returns a param subspace for a given module name.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *IrisApp) GetSubspace(moduleName string) paramstypes.Subspace {
+func (app *FuryApp) GetSubspace(moduleName string) paramstypes.Subspace {
 	subspace, _ := app.ParamsKeeper.GetSubspace(moduleName)
 	return subspace
 }
 
 // SimulationManager implements the SimulationApp interface
-func (app *IrisApp) SimulationManager() *module.SimulationManager {
+func (app *FuryApp) SimulationManager() *module.SimulationManager {
 	return app.sm
 }
 
 // RegisterAPIRoutes registers all application module routes with the provided API server.
-func (app *IrisApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
+func (app *FuryApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
 	clientCtx := apiSvr.ClientCtx
 	// Register new tx routes from grpc-gateway.
 	authtx.RegisterGRPCGatewayRoutes(clientCtx, apiSvr.GRPCGatewayRouter)
@@ -1118,12 +1118,12 @@ func (app *IrisApp) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APICo
 }
 
 // RegisterTxService implements the Application.RegisterTxService method.
-func (app *IrisApp) RegisterTxService(clientCtx client.Context) {
+func (app *FuryApp) RegisterTxService(clientCtx client.Context) {
 	authtx.RegisterTxService(app.BaseApp.GRPCQueryRouter(), clientCtx, app.BaseApp.Simulate, app.interfaceRegistry)
 }
 
 // RegisterTendermintService implements the Application.RegisterTendermintService method.
-func (app *IrisApp) RegisterTendermintService(clientCtx client.Context) {
+func (app *FuryApp) RegisterTendermintService(clientCtx client.Context) {
 	tmservice.RegisterTendermintService(
 		clientCtx,
 		app.BaseApp.GRPCQueryRouter(),
@@ -1133,7 +1133,7 @@ func (app *IrisApp) RegisterTendermintService(clientCtx client.Context) {
 }
 
 // RegisterUpgradeHandler implements the upgrade execution logic of the upgrade module
-func (app *IrisApp) RegisterUpgradeHandler(
+func (app *FuryApp) RegisterUpgradeHandler(
 	planName string,
 	upgrades *storetypes.StoreUpgrades,
 	upgradeHandler sdkupgrade.UpgradeHandler,

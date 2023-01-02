@@ -33,8 +33,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/irisnet/irishub/app"
-	"github.com/irisnet/irishub/app/params"
+	"github.com/furya-official/furyhub/app"
+	"github.com/furya-official/furyhub/app/params"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the
@@ -53,8 +53,8 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 		WithViper("")
 
 	rootCmd := &cobra.Command{
-		Use:   "iris",
-		Short: "IRIS Hub app command",
+		Use:   "fury",
+		Short: "FURY Hub app command",
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 			initClientCtx, err := client.ReadPersistentCommandFlags(initClientCtx, cmd.Flags())
 			if err != nil {
@@ -72,9 +72,9 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 
 			converter.handlePreRun(cmd, args)
 
-			customTemplate, customIRISHubConfig := initAppConfig()
+			customTemplate, customFURYHubConfig := initAppConfig()
 			customTMConfig := initTendermintConfig()
-			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customIRISHubConfig, customTMConfig)
+			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customFURYHubConfig, customTMConfig)
 		},
 		PersistentPostRun: func(cmd *cobra.Command, _ []string) {
 			converter.handlePostRun(cmd)
@@ -230,7 +230,7 @@ func (ac appCreator) newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, 
 		cast.ToUint32(appOpts.Get(server.FlagStateSyncSnapshotKeepRecent)),
 	)
 
-	return app.NewIrisApp(
+	return app.NewFuryApp(
 		logger, db, traceStore, true, skipUpgradeHeights,
 		cast.ToString(appOpts.Get(flags.FlagHome)),
 		cast.ToUint(appOpts.Get(server.FlagInvCheckPeriod)),
@@ -250,7 +250,7 @@ func (ac appCreator) newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, 
 	)
 }
 
-// createIrisappAndExport creates a new irisapp (optionally at a given height) and exports state.
+// createFuryappAndExport creates a new furyapp (optionally at a given height) and exports state.
 func (ac appCreator) appExport(
 	logger log.Logger,
 	db dbm.DB,
@@ -272,7 +272,7 @@ func (ac appCreator) appExport(
 		loadLatest = true
 	}
 
-	irisApp := app.NewIrisApp(
+	furyApp := app.NewFuryApp(
 		logger,
 		db,
 		traceStore,
@@ -285,10 +285,10 @@ func (ac appCreator) appExport(
 	)
 
 	if height != -1 {
-		if err := irisApp.LoadHeight(height); err != nil {
+		if err := furyApp.LoadHeight(height); err != nil {
 			return servertypes.ExportedApp{}, err
 		}
 	}
 
-	return irisApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
+	return furyApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
 }

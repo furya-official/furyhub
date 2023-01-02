@@ -40,12 +40,12 @@ module.exports = {
     locales: {
         "/": {
             lang: "en-US",
-            title: "IRISnet Documents",
-            description: "IRISnet Documents",
+            title: "FURYnet Documents",
+            description: "FURYnet Documents",
         }
     },
     themeConfig: {
-        repo: "irisnet/irishub",
+        repo: "furya-official/furyhub",
         docsDir: "docs",
         editLinks: true,
         docsBranch: "master",
@@ -55,8 +55,8 @@ module.exports = {
                 editLinkText: 'Help us improve this page!',
                 nav: [
                     {
-                        text: 'Back to IRISnet',
-                        link: 'https://www.irisnet.org'
+                        text: 'Back to FURYnet',
+                        link: 'https://www.furyaofficial.org'
                     }
                 ],
                 sidebar: sidebar("", [
