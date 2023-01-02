@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/furya-official/furyhub/modules/mint/types"
+	"github.com/furya-official/furymod/modules/mint/types"
 )
 
 // keeper of the mint store

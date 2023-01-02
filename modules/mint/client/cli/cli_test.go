@@ -7,8 +7,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	minttestutil "github.com/furya-official/furyhub/modules/mint/client/testutil"
-	minttypes "github.com/furya-official/furyhub/modules/mint/types"
+	minttestutil "github.com/furya-official/furymod/modules/mint/client/testutil"
+	minttypes "github.com/furya-official/furymod/modules/mint/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 

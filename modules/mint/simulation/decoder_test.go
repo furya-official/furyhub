@@ -10,8 +10,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/furya-official/furyhub/modules/mint/simulation"
-	"github.com/furya-official/furyhub/modules/mint/types"
+	"github.com/furya-official/furymod/modules/mint/simulation"
+	"github.com/furya-official/furymod/modules/mint/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 

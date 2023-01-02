@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/furya-official/furyhub/modules/mint/types"
+	"github.com/furya-official/furymod/modules/mint/types"
 )
 
 // Simulation parameter constants

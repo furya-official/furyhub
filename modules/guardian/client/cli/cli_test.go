@@ -15,9 +15,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	guardiancli "github.com/furya-official/furyhub/modules/guardian/client/cli"
-	guardiantestutil "github.com/furya-official/furyhub/modules/guardian/client/testutil"
-	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	guardiancli "github.com/furya-official/furymod/modules/guardian/client/cli"
+	guardiantestutil "github.com/furya-official/furymod/modules/guardian/client/testutil"
+	guardiantypes "github.com/furya-official/furymod/modules/guardian/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 

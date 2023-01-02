@@ -14,8 +14,8 @@ import (
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/furya-official/furyhub/modules/guardian/keeper"
-	"github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furymod/modules/guardian/keeper"
+	"github.com/furya-official/furymod/modules/guardian/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 
