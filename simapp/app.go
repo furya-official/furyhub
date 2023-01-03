@@ -305,7 +305,7 @@ func init() {
 	sdk.SetCoinDenomRegex(DefaultCoinDenomRegex)
 
 	nativeToken = tokentypes.Token{
-		Symbol:        "iris",
+		Symbol:        "fury",
 		Name:          "Irishub staking token",
 		Scale:         6,
 		MinUnit:       "uiris",
@@ -320,7 +320,7 @@ func init() {
 		panic(err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".iris")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".fury")
 	owner, err := sdk.AccAddressFromBech32(nativeToken.Owner)
 	if err != nil {
 		panic(err)
