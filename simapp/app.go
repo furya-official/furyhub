@@ -116,12 +116,12 @@ import (
 
 	"github.com/furya-official/furyhub/address"
 	"github.com/furya-official/furyhub/lite"
-	"github.com/furya-official/furymod/modules/guardian"
-	guardiankeeper "github.com/furya-official/furymod/modules/guardian/keeper"
-	guardiantypes "github.com/furya-official/furymod/modules/guardian/types"
-	"github.com/furya-official/furymod/modules/mint"
-	mintkeeper "github.com/furya-official/furymod/modules/mint/keeper"
-	minttypes "github.com/furya-official/furymod/modules/mint/types"
+	"github.com/furya-official/furyhub/modules/guardian"
+	guardiankeeper "github.com/furya-official/furyhub/modules/guardian/keeper"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	mintkeeper "github.com/furya-official/furyhub/modules/mint/keeper"
+	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 
 	"github.com/furya-official/furymod/modules/farm"
 	farmkeeper "github.com/furya-official/furymod/modules/farm/keeper"

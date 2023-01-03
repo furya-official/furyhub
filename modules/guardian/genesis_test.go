@@ -10,9 +10,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/furya-official/furymod/modules/guardian"
-	"github.com/furya-official/furymod/modules/guardian/keeper"
-	"github.com/furya-official/furymod/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/guardian"
+	"github.com/furya-official/furyhub/modules/guardian/keeper"
+	"github.com/furya-official/furyhub/modules/guardian/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 

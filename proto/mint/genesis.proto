@@ -4,7 +4,7 @@ package furyhub.mint;
 import "mint/mint.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furya-official/furymod/modules/mint/types";
+option go_package = "github.com/furya-official/furyhub/modules/mint/types";
 
 // GenesisState defines the mint module's genesis state
 message GenesisState {

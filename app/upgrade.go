@@ -59,10 +59,10 @@ import (
 	migratehtlc "github.com/furya-official/furyhub/migrate/htlc"
 	migrateservice "github.com/furya-official/furyhub/migrate/service"
 	migratetibc "github.com/furya-official/furyhub/migrate/tibc"
-	"github.com/furya-official/furymod/modules/guardian"
-	guardiantypes "github.com/furya-official/furymod/modules/guardian/types"
-	"github.com/furya-official/furymod/modules/mint"
-	minttypes "github.com/furya-official/furymod/modules/mint/types"
+	"github.com/furya-official/furyhub/modules/guardian"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 )
 
 // RegisterUpgradePlan register a handler of upgrade plan

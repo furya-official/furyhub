@@ -3,7 +3,7 @@ package furyhub.guardian;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furya-official/furymod/modules/guardian/types";
+option go_package = "github.com/furya-official/furyhub/modules/guardian/types";
 
 // Super defines the super standard
 message Super {

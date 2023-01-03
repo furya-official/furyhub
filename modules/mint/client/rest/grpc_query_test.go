@@ -10,7 +10,7 @@ package rest_test
 // 	"github.com/cosmos/cosmos-sdk/testutil/network"
 // 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-// 	minttypes "github.com/furya-official/furymod/modules/mint/types"
+// 	minttypes "github.com/furya-official/furyhub/modules/mint/types"
 // 	"github.com/furya-official/furyhub/simapp"
 // )
 

@@ -10,8 +10,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 
-	"github.com/furya-official/furymod/modules/mint"
-	"github.com/furya-official/furymod/modules/mint/types"
+	"github.com/furya-official/furyhub/modules/mint"
+	"github.com/furya-official/furyhub/modules/mint/types"
 	"github.com/furya-official/furyhub/simapp"
 )
 

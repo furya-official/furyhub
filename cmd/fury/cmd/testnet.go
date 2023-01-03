@@ -36,7 +36,7 @@ import (
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	guardiantypes "github.com/furya-official/furymod/modules/guardian/types"
+	guardiantypes "github.com/furya-official/furyhub/modules/guardian/types"
 )
 
 var (
