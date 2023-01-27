@@ -1,4 +1,4 @@
-module github.com/furya-official/furyhub
+module github.com/gridiron-protocol/furyhub
 
 go 1.18
 
@@ -7,7 +7,6 @@ require (
 	github.com/bianjieai/tibc-go v0.4.2
 	github.com/cosmos/cosmos-sdk v0.46.5
 	github.com/cosmos/ibc-go/v5 v5.0.1
-	github.com/furya-official/furymod v1.7.2
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
 	github.com/gorilla/mux v1.8.0

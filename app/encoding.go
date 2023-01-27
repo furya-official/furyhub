@@ -3,7 +3,7 @@ package app
 import (
 	"github.com/cosmos/cosmos-sdk/std"
 
-	"github.com/furya-official/furyhub/app/params"
+	"github.com/gridiron-protocol/furyhub/app/params"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing

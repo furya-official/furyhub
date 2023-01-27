@@ -17,7 +17,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=furya-official/furyhub
+          DOCKER_IMAGE=gridiron-protocol/furyhub
           VERSION=noop
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -54,8 +54,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           
 #       - name: Build furyhub image
-#         run: source ~/.bashrc; sudo docker build -t furya-official/furyhub:latest .
+#         run: source ~/.bashrc; sudo docker build -t gridiron-protocol/furyhub:latest .
 #       - name: Login dockerhub
 #         run: sudo docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASS}}
 #       - name: Publish furyhub image
-#         run: sudo docker push furya-official/furyhub:latest
+#         run: sudo docker push gridiron-protocol/furyhub:latest

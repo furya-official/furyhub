@@ -1,5 +1,5 @@
 #
-# Build image: docker build -t furya-official/furyhub .
+# Build image: docker build -t gridiron-protocol/furyhub .
 #
 FROM golang:1.18-alpine3.16 as builder
 

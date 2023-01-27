@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/furya-official/furyhub/modules/guardian/types"
+	"github.com/gridiron-protocol/furyhub/modules/guardian/types"
 )
 
 type msgServer struct {

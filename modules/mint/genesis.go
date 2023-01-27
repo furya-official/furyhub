@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/furya-official/furyhub/modules/mint/keeper"
-	"github.com/furya-official/furyhub/modules/mint/types"
+	"github.com/gridiron-protocol/furyhub/modules/mint/keeper"
+	"github.com/gridiron-protocol/furyhub/modules/mint/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

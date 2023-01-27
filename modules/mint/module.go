@@ -19,11 +19,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/furya-official/furyhub/modules/mint/client/cli"
-	"github.com/furya-official/furyhub/modules/mint/client/rest"
-	"github.com/furya-official/furyhub/modules/mint/keeper"
-	"github.com/furya-official/furyhub/modules/mint/simulation"
-	"github.com/furya-official/furyhub/modules/mint/types"
+	"github.com/gridiron-protocol/furyhub/modules/mint/client/cli"
+	"github.com/gridiron-protocol/furyhub/modules/mint/client/rest"
+	"github.com/gridiron-protocol/furyhub/modules/mint/keeper"
+	"github.com/gridiron-protocol/furyhub/modules/mint/simulation"
+	"github.com/gridiron-protocol/furyhub/modules/mint/types"
 )
 
 var (

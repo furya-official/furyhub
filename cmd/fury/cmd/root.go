@@ -33,8 +33,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/furya-official/furyhub/app"
-	"github.com/furya-official/furyhub/app/params"
+	"github.com/gridiron-protocol/furyhub/app"
+	"github.com/gridiron-protocol/furyhub/app/params"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the

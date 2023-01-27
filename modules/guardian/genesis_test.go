@@ -10,10 +10,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/furya-official/furyhub/modules/guardian"
-	"github.com/furya-official/furyhub/modules/guardian/keeper"
-	"github.com/furya-official/furyhub/modules/guardian/types"
-	"github.com/furya-official/furyhub/simapp"
+	"github.com/gridiron-protocol/furyhub/modules/guardian"
+	"github.com/gridiron-protocol/furyhub/modules/guardian/keeper"
+	"github.com/gridiron-protocol/furyhub/modules/guardian/types"
+	"github.com/gridiron-protocol/furyhub/simapp"
 )
 
 type TestSuite struct {

@@ -18,7 +18,7 @@ After FURY Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as 
 
 ### Start node from genesis
 ::tip 
-You must use Furyhub [v1.1.1](https://github.com/furya-official/furyhub/releases/tag/v1.1.1)[ ](https://github.com/furya-official/furyhub/releases/tag/v1.0.1) to initialize your node::
+You must use Furyhub [v1.1.1](https://github.com/gridiron-protocol/furyhub/releases/tag/v1.1.1)[ ](https://github.com/gridiron-protocol/furyhub/releases/tag/v1.0.1) to initialize your node::
 
 ```bash
 # init node

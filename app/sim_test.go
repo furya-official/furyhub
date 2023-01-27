@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
-	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
-	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
+	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
+	htlctypes "github.com/irisnet/irismod/modules/htlc/types"
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
 	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	oracletypes "github.com/furya-official/furymod/modules/oracle/types"
-	randomtypes "github.com/furya-official/furymod/modules/random/types"
-	servicetypes "github.com/furya-official/furymod/modules/service/types"
-	tokentypes "github.com/furya-official/furymod/modules/token/types"
+	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
+	randomtypes "github.com/irisnet/irismod/modules/random/types"
+	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	tokentypes "github.com/irisnet/irismod/modules/token/types"
 	"github.com/stretchr/testify/require"
 
 	abci "github.com/tendermint/tendermint/abci/types"
@@ -202,7 +202,7 @@ func TestAppImportExport(t *testing.T) {
 		{app.keys[ibchost.StoreKey], newApp.keys[ibchost.StoreKey], [][]byte{}},
 		{app.keys[ibctransfertypes.StoreKey], newApp.keys[ibctransfertypes.StoreKey], [][]byte{}},
 
-		// check furymod module
+		// check irismod module
 		{app.keys[tokentypes.StoreKey], newApp.keys[tokentypes.StoreKey], [][]byte{}},
 		{app.keys[oracletypes.StoreKey], newApp.keys[oracletypes.StoreKey], [][]byte{}},
 		//mt.Supply is InitSupply, can be not equal to TotalSupply

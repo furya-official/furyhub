@@ -45,7 +45,7 @@ module.exports = {
         }
     },
     themeConfig: {
-        repo: "furya-official/furyhub",
+        repo: "gridiron-protocol/furyhub",
         docsDir: "docs",
         editLinks: true,
         docsBranch: "master",

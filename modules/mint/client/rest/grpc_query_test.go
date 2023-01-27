@@ -10,8 +10,8 @@ package rest_test
 // 	"github.com/cosmos/cosmos-sdk/testutil/network"
 // 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-// 	minttypes "github.com/furya-official/furyhub/modules/mint/types"
-// 	"github.com/furya-official/furyhub/simapp"
+// 	minttypes "github.com/gridiron-protocol/furyhub/modules/mint/types"
+// 	"github.com/gridiron-protocol/furyhub/simapp"
 // )
 
 // type IntegrationTestSuite struct {

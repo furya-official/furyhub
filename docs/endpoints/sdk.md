@@ -8,8 +8,8 @@ FURYhub SDK is a software development kit based on the Endpoint provided by FURY
 
 Available in three languages:
 
-- [furyhub-sdk-go](https://github.com/furya-official/furyhub-sdk-go)
-- [furyhub-sdk-js](https://github.com/furya-official/furyhub-sdk-js)
+- [furyhub-sdk-go](https://github.com/gridiron-protocol/furyhub-sdk-go)
+- [furyhub-sdk-js](https://github.com/gridiron-protocol/furyhub-sdk-js)
 - furyhub-sdk-java (coming soon)
 
 ## Design Goals and Concepts
@@ -24,6 +24,6 @@ The SDK mainly implements the encapsulation of the functions of FURYhub modules,
 
 The document link of FURYhub SDKs is as follows:
 
-- [Go SDK docs](https://github.com/furya-official/furyhub-sdk-go/blob/master/README.md)
-- [JavaScript SDK docs](https://github.com/furya-official/furyhub-sdk-js/blob/master/README.md)
+- [Go SDK docs](https://github.com/gridiron-protocol/furyhub-sdk-go/blob/master/README.md)
+- [JavaScript SDK docs](https://github.com/gridiron-protocol/furyhub-sdk-js/blob/master/README.md)
 - Java SDK docs (coming soon)

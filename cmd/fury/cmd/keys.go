@@ -14,7 +14,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/client/keys"
 
-	"github.com/furya-official/furyhub/keystore"
+	"github.com/gridiron-protocol/furyhub/keystore"
 )
 
 // Commands registers a sub-tree of commands to interact with
